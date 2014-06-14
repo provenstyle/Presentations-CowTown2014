@@ -1,6 +1,12 @@
-﻿define(['model/messageService'], function(service) {
+﻿define(['model/messageService', 'durandal/system'], function(service, system) {
 
     return {
-        message: service.getMessage()
+        message: service.getMessage(),
+        activate: function (messageParam) {
+            system.log("Activate ********* messageparam: " + messageParam);
+            if (messageParam) {
+                this.message = messageParam;
+            };
+        }
     };
 });

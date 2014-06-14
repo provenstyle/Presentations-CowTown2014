@@ -10,7 +10,7 @@
             router.map([
                 { route: '', title:'Welcome', moduleId: 'viewmodels/welcome', nav: true },
                 { route: 'flickr', moduleId: 'viewmodels/flickr', nav: true },
-                { route: 'simplePage', moduleId: 'viewmodels/simplePage', nav: true },
+                { route: 'simplePage(/:message)', moduleId: 'viewmodels/simplePage', title:'My Message', nav: true },
                 { route: 'about', moduleId: 'viewmodels/about', nav: true }
 
             ]).buildNavigationModel();
