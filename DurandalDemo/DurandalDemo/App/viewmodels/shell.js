@@ -10,9 +10,9 @@
             router.map([
                 { route: '', title:'Welcome', moduleId: 'viewmodels/welcome', nav: true },
                 { route: 'flickr', moduleId: 'viewmodels/flickr', nav: true },
-                { route: 'simplePage(/:message)', moduleId: 'viewmodels/simplePage', title:'My Message', nav: true },
-                { route: 'about', moduleId: 'viewmodels/about', nav: true }
-
+                { route: 'simplePage(/:message)', moduleId: 'viewmodels/simplePage', title:'Simple Page', hash:'#simplePage', nav: true },
+                { route: 'about', moduleId: 'viewmodels/about', nav: true },
+                { route: 'bindingDemo', moduleId: 'viewmodels/bindingDemo', nav: true }
             ]).buildNavigationModel();
             
             return router.activate();
