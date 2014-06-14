@@ -1,1 +1,3 @@
-﻿define({});
+﻿define({
+    message: 'Hello, World!'
+});
