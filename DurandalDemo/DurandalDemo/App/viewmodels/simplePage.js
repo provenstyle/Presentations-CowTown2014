@@ -1,3 +1,6 @@
-﻿define({
-    message: 'Hello, World!'
+﻿define(['model/messageService'], function(service) {
+
+    return {
+        message: service.getMessage()
+    };
 });
